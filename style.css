@@ -1,0 +1,84 @@
+/* The most secure code in the world is code which is never written.
+— Colin Percival */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+		'Helvetica Neue', sans-serif;
+}
+
+.section {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(10, 168, 147);
+}
+.card {
+	position: relative;
+	width: 400px;
+	min-height: 400px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(10px);
+}
+.card img {
+	width: 160px;
+	height: 130px;
+	position: inherit;
+}
+.card .effect {
+	animation: shake 0.2s linear infinite;
+}
+.card button {
+	width: 100px;
+	background: rgb(2, 122, 219);
+	color: white;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	padding: 0.25rem 0.5rem;
+	letter-spacing: 0.1rem;
+	font-weight: bold;
+	box-shadow: 0px 4px 10px rgb(46, 133, 121);
+	border-radius: 0.2rem;
+}
+.card p {
+	padding: 0.5rem 2.5rem;
+	line-height: 30px;
+	letter-spacing: 0.1rem;
+	font-size: 14px;
+	color: rgb(253, 255, 255);
+	text-shadow: 0px 3px 4px rgb(0, 0, 0);
+	font-weight: bold;
+}
+@media screen and (min-width: 1300px) {
+	.card {
+		width: 550px;
+		height: 450px;
+	}
+	.card p {
+		font-size: 18px;
+	}
+}
+@keyframes shake {
+	0% {
+		transform: rotate(10deg);
+	}
+	25% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}
