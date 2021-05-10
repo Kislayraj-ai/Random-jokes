@@ -38,6 +38,7 @@ body {
 	animation: shake 0.2s linear infinite;
 }
 .card button {
+	margin-bottom: 20px;
 	width: 100px;
 	background: rgb(2, 122, 219);
 	color: white;
@@ -66,6 +67,11 @@ body {
 	}
 	.card p {
 		font-size: 18px;
+	}
+	.card img {
+		width: 180px;
+		height: 150px;
+		position: inherit;
 	}
 }
 @keyframes shake {
